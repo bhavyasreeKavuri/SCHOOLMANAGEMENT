@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+        <link rel="stylesheet" type="text/css" href="css/admin1.css">
+     <script src="https://kit.fontawesome.com/16ea6362b0.js" crossorigin="anonymous"></script>
+    <script src="js/hostel.js"></script>
+   <div id="mySidebar" class="sidebar">
+
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   
+  
+  
+  <li class="active"><a href="ADMIN.html">ADMIN</a></li>
+  <li><a href="STUDENT.html">STUDENT</a></li>
+  <li><a href="TEACHER.html">TEACHER</a></li>
+  <li><a href="MARKS.html">MARKS</a></li>
+  <li><a href="test.html">MODULES</a></li>
+  
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">&#9776; MENU </button>
+  </div>
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  .mystyle {
+    width: 100%;
+    padding: 25px;
+    background-color: coral;
+    color: white;
+    font-size: 25px;
+    box-sizing: border-box;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <!-- Student Module -->
+  <h2>Student Module</h2>
+  <h2></h2><br>
+  <button onclick="getstudent()">Get Student</button> <button onclick="addStudent()">Add Student</button>
+  
+  <!-- Teacher Module -->
+  <div class="module">
+    <h2>Teacher Module</h2>
+    <button onclick="getTeachers()">Get Teachers</button> <button onclick="addTeacher()">Add Teacher</button> <ul id="teacherList"></ul>
+    <!-- Marks Module -->
+    <div class="module">
+    <h2>Marks Module</h2>
+    <button onclick="getMarks()">Get Marks</button> <ul id="marksList"></ul>
+    </div>
+     </div>
+    
+  
+  <div id="myDIV">
+  
+  </div>
+  
+  <script>
+  function getstudent() {
+     var element = document.getElementById("myDIV");
+     element.classList.add("mystyle");
+  }
+  function addStudent() {
+     var element = document.getElementById("myDIV");
+     element.classList.add("mystyle");
+  }
+  function getTeachers() {
+     var element = document.getElementById("myDIV");
+     element.classList.add("mystyle");
+  }
+  function addTeacher() {
+     var element = document.getElementById("myDIV");
+     element.classList.add("mystyle");
+  }
+  function getMarks() {
+     var element = document.getElementById("myDIV");
+     element.classList.add("mystyle");
+  }
+  </script>
+  
+  
+
+
