@@ -1,6 +1,6 @@
 @RestController
 @RequestMapping("/api/marks") 
-public class marks {
+public class markscontroller {
 	@Autowired
     private Marks marks;
 	
